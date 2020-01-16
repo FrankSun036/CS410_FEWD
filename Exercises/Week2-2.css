@@ -1,0 +1,36 @@
+/*
+p[class^="d"] {
+    color: red;
+}
+*/
+/*
+section p {
+    color: green;
+    }
+
+ next sibling 
+    .sibling-example li > a{
+    color: blue;
+}
+*/
+
+section > p {
+    color: red;
+    }
+
+div > ol > li {
+    color: purple;
+    }
+
+/*
+descendant " "
+children ">"
+next sibling "+"
+general siblings "~"
+*/
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(12, 128, 128, 0.5)
+}
