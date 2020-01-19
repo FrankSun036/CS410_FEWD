@@ -1,0 +1,31 @@
+ul{
+    text-align:justify;
+    white-space: nowrap;
+    padding:10;
+}
+li{
+    list-style:none;
+    display:inline-block;
+    vertical-align:baseline;
+}
+[alt="cat1"]{
+    filter: grayscale();
+}
+[alt="cat2"]{
+    filter: blur(3px);
+}
+[alt="cat3"]{
+    filter: invert();
+}
+[alt="cat4"]{
+    filter: brightness(50%);
+}
+[alt="cat5"]{
+    filter: saturate(10);
+}
+[alt="cat6"]{
+    filter: sepia();
+}
+[alt="cat7"]{
+    filter: grayscale() brightness(50%) blur(3px);
+}
