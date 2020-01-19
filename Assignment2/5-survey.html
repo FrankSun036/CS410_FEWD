@@ -1,0 +1,68 @@
+<link rel="stylesheet" type="text/css" href="5-survey.css">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment1-4-survey</title>
+    </head>
+    <body>
+        <form action="Survey" method="get" class="form1">
+                <legend>CS 410P/510 - Intro Survey</legend>
+                <h1>CS 410P/510 - INTRO SURVEY</h4>
+                <div class="name">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="email">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+                </div>
+                <br>
+                <div>
+                    <h4>Registration Status</h4>
+                    <select type="number" name="choice">
+                    <option value="first">Unregistered</option>
+                    <option value="second" selected>Registered</option>
+                    </select>
+                </div>
+                <div>
+                    <h4>Class Section<h4>
+                    <input type="radio" id="410P" name="410r" value="410">
+                    <label for="410P">410P</label>
+                    <input type="radio" id="510" name="510r" value="510">
+                    <label for="510">510</label>
+                </div>
+                <div>
+                    <h4>Have you taken any of these courses?</h4>
+                    <input type="checkbox" id="PLB" name="PLB">
+                    <label for="PL">Programing Languages<label>
+                    <br>
+                    <input type="checkbox" id="OSB" name="OSB" checked>
+                    <label for="OS">Operating System</label>
+                    <br>
+                    <input type="checkbox" id="FSWDB" name="FSWDB" checked>
+                    <label for="FSWD">Full Stack Web Development</label>
+                    <br>
+                    <input type="checkbox" id="SEB" name="SEB">
+                    <label for="SE">Software Engineering</label>
+                </div>
+                <br>
+                <div>
+                    <h4>What would you like to learn and accomplish in this class?</h4>
+                    <textarea id="story" name="story" rows="5" cols="33" resize=""></textarea>
+                    <br>
+                    <h4>Do you have any project ideas?</h4>
+                    <textarea id="story" name="story" rows="5" cols="33" resize=""></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="PLB" name="PLB">
+                    <label for="PL">I already have a group for the final project</label>
+                </div>
+                <br>
+                <div class="controls">
+                    <button type = "button">Submit</button>
+                    <button type = "button">Reset</button>
+                </div>
+        </form>
+    </body>
+</html>

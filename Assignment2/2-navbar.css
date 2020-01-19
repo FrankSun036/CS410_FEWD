@@ -1,0 +1,24 @@
+
+
+/*
+.simple-linear{background:linear-gradient(blue,black)}
+button:hover:focus:active {background-color: #ffdb3a}
+
+button {
+    background-color: linear-gradient(to right, rgb(0, 68, 255), black);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+*/
+fieldset{background-image: linear-gradient(to right, blue,black)}
+
+button{float: left}
+
+button:hover {background-color: rgba(0, 255, 234, 0)}
+button:focus {background-color: blueviolet}
+button:active {background-color: yellow}
