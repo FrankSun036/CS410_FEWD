@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAaA,AAAA,GAAG,CAAC,EAAE,CAAC;EAXH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;CAWnB;;AAFD,AALI,GAKD,CAAC,EAAE,CALF,EAAE,CAAC;EACC,OAAO,EAAE,YAAY;EACrB,aAAa,EAAE,GAAG,CAAC,KAAK,CAVxB,KAAK;CAWR",
+    "sources": [
+        "Week4-2.scss"
+    ],
+    "names": [],
+    "file": "Week4-2.css"
+}
