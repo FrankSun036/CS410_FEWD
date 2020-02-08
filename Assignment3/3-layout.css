@@ -1,0 +1,32 @@
+*{
+    font-family:sans-serif;
+    font-size: 1.4em;
+}
+.conatiner{
+    height: 400px;
+    
+}
+.box{
+    width: 200px;
+    height: 100px;
+    margin: 1px;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    font-size: 40px;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+}
+
+/*
+.container{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    direction: rtl;
+}

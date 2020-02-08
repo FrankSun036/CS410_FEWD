@@ -1,0 +1,87 @@
+*{
+    font-family:sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    height: 1400px;
+    width: 1400px;
+
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.title{
+    background-color: black;
+    color: white;
+    font-weight:bond;
+    grid-area: 1/1/2/8;
+    font-size: 5rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.week{
+    color: black;
+    font-weight: bold;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.mon{
+    grid-column: 2;
+    grid-row: 2;}
+.tue{
+    grid-column: 3;
+    grid-row: 2;}
+.wed{
+    grid-column: 4;
+    grid-row: 2;}
+.thr{
+    grid-column: 5;
+    grid-row: 2;}
+.fri{
+    grid-column: 6;
+    grid-row: 2;}
+.sat{
+    grid-column: 7;
+    grid-row: 2;}
+.sun{
+    grid-column: 1;
+    grid-row: 2;}
+
+
+.blank{
+    border:1px solid lightgray;
+    padding: 10px;
+    margin: 5px;
+}
+.blank1{
+    grid-column:1;
+    grid-row:3;
+}
+.blank2{
+    grid-column:2;
+    grid-row:3;
+}
+.blank3{
+    grid-column:3;
+    grid-row:3;
+}
+.blank4{
+    grid-column:7;
+    grid-row:7;
+}
+
+
+.day{
+    border:1px solid lightgray;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(194, 194, 194);
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

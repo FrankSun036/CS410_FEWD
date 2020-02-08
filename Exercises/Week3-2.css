@@ -76,3 +76,9 @@ body {
 .row > * {
     border: 1px solid black;
 }
+
+.box:hover{
+	transition: 3s;
+	color: black;
+	background-color: white;
+}

@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment1-4-survey</title>
+        <link rel="stylesheet" type="text/css" href=​https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.m in.css/>
+    </head>
+    <body>
+        <form action="Survey" method="get" class="form1">
+            <h1>CS 410P/510 - Intro Survey</h1>
+            <br>
+            <div class="name">
+                <label for="name">Enter your name:    </label>
+                <input type="text" class="name" id="name" placeholder="name" required>
+            </div>
+            <div class="email">
+                <label for="email">Enter your email:    </label>
+                <input type="email" class="email" id="email" placeholder="email" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <h2>Registration Status</h2>    
+                <select type="number" class="choice">
+                <option value="first">Registered</option>
+                <option value="second">Unregistered</option>
+                </select>
+            </div>
+            <div>
+                <h2>Class Section</h2>
+                <input type="radio" id="410P" name="410r" value="410">
+                <label for="410P">410P</label>
+                <input type="radio" id="510" name="510r" value="510">
+                <label for="510">510</label>
+            </div>
+            <div>
+                <h2>Have you taken any of these courses?</h2>
+                <input type="checkbox" id="PLB" name="PLB" checked>
+                <label for="PL">Programing Languages<label>
+                <br>
+                <input type="checkbox" id="OSB" name="OSB" checked>
+                <label for="OS">Operating System</label>
+                <br>
+                <input type="checkbox" id="FSWDB" name="FSWDB" checked>
+                <label for="FSWD">Full Stack Web Development</label>
+            </div>
+            <br>
+            <div>
+                <h2>What would you like to learn and accomplish in this class?</h2>
+                <textarea id="story" class="story" rows="5" cols="33" resize=""></textarea>
+                <br>
+                <h2>Do you have any project ideas?</h2>
+                <textarea id="story" class="story" rows="5" cols="33" resize=""></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="PLB" class="PLB" checked>
+                <label for="PL">I already have a group for the final project</label>
+            </div>
+            <br>
+            <div class="controls">
+                <button type="Button" class="btn btn-parimary">Submit</button>
+                <button typr="Button" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="​https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min. js​"></script>
+    </body>
+</html>
