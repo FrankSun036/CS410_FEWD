@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment4-3-palindrome</title>
+    </head>
+    <body>
+        <h1>Whether a number is Palindrome or not</h1>
+        Enter The Number : <input type="number" min = "0" name="n" id = "N"/>
+        <button onClick="Palindrome()">CHECK</button>
+
+        <script>
+			function Palindrome()
+			{
+				var rem, temp, final = 0;
+				var number = Number(document.getElementById("N").value);
+
+                temp = number;
+                if(number < 0)
+                {
+                    window.alert("You really should input a integer bigger than 0.")
+                }
+                else{
+                    while(number > 0)
+                    {
+                        rem = number % 10;
+                        number = parseInt(number / 10);
+                        final = final * 10 + rem;
+                    }
+                    if(final == temp)
+                    {
+                        window.alert("This number is Palindrome");
+                    }
+                    else
+                    {
+                        window.alert("No! it is not Palindrome");
+                    }
+                }
+			}
+		</script>
+    </body>
+</html>
+
+
