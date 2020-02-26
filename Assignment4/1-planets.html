@@ -1,39 +1,15 @@
-<script>
-document.addEventListener('DOMContentLoaded', loadPlanets);
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment4-1-planets</title>
+    </head>
+    <body>
+        <h1>Star Wars Planets</h1>
+    <p>Planet list Below</p>
 
-function loadPlanets() {
-  var docBod = document.body;
-  for (var j = 1; j < 8; j++) {
-    (function(i) { //need to create closure for j
-      var f = i;
-      var req = new XMLHttpRequest();
-      var URLhost = 'https://swapi.co/api/planets/?page=' + f;
-      req.open('GET', URLhost, true);
-      req.addEventListener('load', function() {
-        if (req.status >= 200 && req.status < 400) {
-          var response = JSON.parse(req.responseText);
-          console.log(response);
-          var planetHead = document.createElement('h5');
-          docBod.appendChild(planetHead);
-          planetHead.textContent = 'Planets Page - ' + f;
-          var planetList = document.createElement('ol');
-          planetHead.appendChild(planetList);
+    <ol></ol>
 
-          for (var k = 0; k < response.results.length; k++) {
-            (function(y) {
-              var planetIn = document.createElement('li');
-              planetIn.textContent = response.results[y].name;
-              planetList.appendChild(planetIn);
-            })(k);
-          }
-
-        } else {
-          console.log('Error in network request: ' + req.statusText);
-        }
-      });
-      req.send(null);
-      event.preventDefault();
-    })(j);
-  }
-}
-</script>
+    <script src="1-planets.js"></script>
+    </body>
+</html>

@@ -30,23 +30,23 @@
                 </div>
                 <br>
                 <div class="radio">
-                    
+                    <legend>Class Sections:</legend>
+                    <input type="radio" id="410P" name="class-section" value="1">
                     <label for="410P">410P</label>
-                    <input type="radio" id="410P" name="410r" value="410">
+                    <input type="radio" id="510" name="class-section" value="1">
                     <label for="510">510</label>
-                    <input type="radio" id="510" name="510" value="510">
                 </div>
                 <br>
                 <div class="question">
-                    <p class="font-weight-bold">Have you taken any of these courses?</p>
-                    <label for="PL">Programing Languages</label>
-                    <input type="checkbox" id="PLB" name="PLB" checked>
+                    <legend>Have you taken any of these courses?</legend>
+                    <input type="checkbox" id="PLB" name="classes" checked="checked">
+                    <label for="PLB">Programing Languages</label>
                     <br>
-                    <label for="OS">Operating System</label>
-                    <input type="checkbox" id="OSB" name="OSB" checked>
+                    <input type="checkbox" id="OSB" name="classes" checked="checked">
+                    <label for="OSB">Operating System</label>
                     <br>                   
-                    <label for="FSWD">Full Stack Web Development</label>
-                    <input type="checkbox" id="FSWDB" name="FSWDB" checked>
+                    <input type="checkbox" id="FSWDB" name="classes" checked="checked">
+                    <label for="FSWDB">Full Stack Web Development</label>
                 </div>
                 <br>
                 <div class="textbox">
@@ -59,13 +59,13 @@
                 <br>
                 <div class="conform">
                     <input type="checkbox" id="LCB" class="LCB" checked>
-                    <label for="PL">I already have a group for the final project</label>
+                    <label for="LCB">I already have a group for the final project</label>
+                </div>  
+                <br>
+                <div class="container">
+                    <button onclick = doublecheck() class="btn btn-primary btn-sm" type="submit">Submit</button>
+                    <button class="btn btn-secondary btn-sm" type="reset">Reset</button>
                 </div>
-            </div>   
-            <br>
-            <div class="container">
-                <button onclick = doublecheck() class="btn btn-primary btn-sm" type="submit">Submit</button>
-                <button class="btn btn-secondary btn-sm" type="reset">Reset</button>
             </form>
         </div>
 
@@ -74,47 +74,58 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
         <script>
-            var data1 = getElementByID("PLB").checked
-            var data2 = getElementByID("OSB").checked
-            var data3 = getElementByID("FSWDB").checked
-            var data4 = getElementByID("410P").checked
-            var data5 = getElementByID("510").checked
-            String(da1) = "Programing Languages"
-            String(da2) = "Operating System"
-            String(da3) = "Full Stack Web Development"
-            String(da4) = "410P"
-            String(da5) = "510"
-
-            if(data1 == false){
-                da1 = ""
-            }
-            if(data2 == false){
-                data2 = ""
-            }
-
-            if(data3 == false){
-                data3 = ""
-            }
-
-            if(data4 == false){
-                data4 = "410P "
-            }
-
-            if(data5 == false){
-                data5 = "510 "
-            }
+            
 
             function doublecheck(){
-               
+                var data1 = document.getElementById("410P").checked;
+                var data2 = document.getElementById("510").checked;
+                var data3 = document.getElementById("PLB").checked;
+                var data4 = document.getElementById("OSB").checked;
+                var data5 = document.getElementById("FSWDB").checked;
+
+                var da1 = "410P ";
+                var da2 = "510 ";
+                var da3 = "Programing Languages. ";
+                var da4 = "Operating System. ";
+                var da5 = "Full Stack Web Development. ";
+                var da6 = "Yes"
+
+                if(document.getElementById("410P").checked !== true){
+                    da1 = ""
+                }
+                if(document.getElementById("510").checked !== true){
+                    da2 = ""
+                }
+                if(document.getElementById("PLB").checked !== true){
+                    da3 = ""
+                }
+                if(document.getElementById("OSB").checked !== true){
+                    da4 = ""
+                }
+                if(document.getElementById("FSWDB").checked !== true){
+                    da5 = ""
+                }
+                if(document.getElementById("LCB").checked !== true){
+                    da6 = "No"
+                }
+
+
+
+                console.log(data1)
+                console.log(data2)
+                console.log(data3)
+                console.log(data4)
+                console.log(data5)
+                console.log(da1)
                 alert(
                 "Name: " + document.getElementById("name").value + "\r\n" +
                 "E-mail: " + document.getElementById("email").value + "\r\n" +
                 "Registration Status: " + document.getElementById("status").value +"\r\n" +
-                "Class Section: " + data4 + data5 +"\r\n" +
-                "Courses: " + data1 + data2 + data3 + "\r\n" +
+                "Class Section: " + da1 + da2 +"\r\n" +
+                "Courses: " + da3 + da4 + da5 + "\r\n" +
                 "Goals: " + document.getElementById("story1").value + "\r\n" +
                 "Project Ideas: " + document.getElementById("story2").value + "\r\n" +
-                "Group: " + document.getElementById("LCB").value
+                "Group: " + da6
                 )
             }
             

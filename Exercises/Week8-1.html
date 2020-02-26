@@ -1,0 +1,30 @@
+const names = [
+    {id: 1, name: "Arya", house: "Stark"},
+    {id: 2, name: "Sansa", house: "Stark"},
+    {id: 3, name: "Jon", house: "Stark"},
+    {id: 4, name: "Cersei", house: "Lannister"},
+    {id: 5, name: "Tyrion", house: "Lannister"}
+
+];
+const capitalLetter = name.map(x => x.name.tuUPperCase());
+//const houseLetterS = house.map(x => x.house == "Stark");
+const starks = names.filter(x => x.house === "Stark");//task 2
+const minusjon = names.filter(x => x.name !== "jon");//task 1
+const houses = names.reduce((acc, current) => {
+    if(!obj[current.house]){
+        obj[current.house] = 1;
+    }else{
+        obj[current.house]++;
+    }
+}, {});
+
+console.log(names);
+console.log(houseLetterS);
+
+//task 1: remove Jon from the list
+//task 2: display all Stark
+
+function reduce()
+{
+    
+}
